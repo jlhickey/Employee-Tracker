@@ -32,7 +32,7 @@ To watch it, go to:
 
 
 ## MY REPOSITORIES
-- [My Employee-Tracker Project](https://github.com/jlhickey/Employee-Tracker)
-- [GitHub](https://github.com/jlhickey)
+- [My Employee-Tracker Project (https://github.com/jlhickey/Employee-Tracker)]
+- [MyGitHub (https://github.com/jlhickey)]
 
  
