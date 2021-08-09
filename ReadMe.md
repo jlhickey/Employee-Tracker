@@ -2,7 +2,7 @@
  
   
 # ![GitHub license](https://img.shields.io/badge/Made%20by-%40jlhickey-orange)
-# ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)Description
+# ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 
 ## User Story
