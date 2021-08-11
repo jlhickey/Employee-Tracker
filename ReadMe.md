@@ -27,12 +27,12 @@ The apps used to run
 
 There is a demo video of how well my ReadMe assignment went
 To watch it, go to:  
- (https://github.com/jlhickey/ReadMe-generator/blob/main/utils/EmployeeTracker.mov)
+ https://github.com/jlhickey/ReadMe-generator/blob/main/utils/EmployeeTracker.mov
 
 
 
 ## MY REPOSITORIES
-- [My Employee-Tracker Project (https://github.com/jlhickey/Employee-Tracker)]
-- [MyGitHub (https://github.com/jlhickey)]
+- [My Employee-Tracker Project: https://github.com/jlhickey/Employee-Tracker]
+- [MyGitHub: https://github.com/jlhickey]
 
  
