@@ -21,13 +21,13 @@ The apps used to run
 
 ## Mock Up
 
- [screen shot](https://github.com/jlhickey/ReadMe-generator/blob/main/readme..png)
+ [screen shot](https://github.com/jlhickey/ReadMe-generator/blob/main/EmployeeTracker.png)
 
 
 
 There is a demo video of how well my ReadMe assignment went
 To watch it, go to:  
- (https://github.com/jlhickey/ReadMe-generator/blob/main/utils/Readmerecording.mov)
+ (https://github.com/jlhickey/ReadMe-generator/blob/main/utils/EmployeeTracker.mov)
 
 
 
