@@ -8,7 +8,7 @@ const { create } = require('domain');
 // Create the connection to MySQL WorkBench
 let connection = mysql.createConnection({
     host: 'localhost',
-    port: 3306,
+    port: 3000,
     user: 'root',
     password: '',
     database: 'employee_DB'
@@ -240,7 +240,7 @@ const roleAdd = async () => {
             {
                 name: 'salary',
                 type: 'input',
-                message: 'What salary will this role provide?'
+                message: 'What is the salary for this role?'
             },
             {
                 name: 'departmentId',
