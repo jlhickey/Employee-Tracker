@@ -1,0 +1,4 @@
+  
+DROP DATABASE IF EXISTS coding;
+CREATE DATABASE coding;
+USE coding;
