@@ -1,0 +1,48 @@
+ //Add a role with the title, salary and department ID to the role table
+    addRole(title, salary, department) {
+        const sql = 'INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)';
+        const params = [title, salary, department];
+        return db.promise().query(sql, params);
+    }
+
+    //Add employee with first name, last name, role id and manager id to the employee table
+    addEmployee(firstname, lastname, role, manager) {
+        const sql = 'INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)';
+        const params = [firstname, lastname, role, manager];
+        return db.promise().query(sql, params);
+    }
+
+    //Update the employee's role
+    updateEmployeeRole(employee, role) {
+        const sql = 'UPDATE employee SET role_id = ? WHERE id = ?';
+        const params = [role, employee];
+        return db.promise().query(sql, params);
+    }
+
+    //Update the employee's manager
+    updateEmployeeManager(employee, manager) {
+        const sql = 'UPDATE employee SET manager_id = ? WHERE id = ?';
+        const params = [manager, employee];
+        return db.promise().query(sql, params);
+    }
+
+    //Delete the department(with id)
+    deleteDepartment(department){
+        const sql = 'DELETE FROM department WHERE id = ?';
+        return db.promise().query(sql, department);
+    }
+
+    //Delete the role(with id)
+    deleteRole(role){
+        const sql = 'DELETE FROM role WHERE id = ?';
+        return db.promise().query(sql, role);
+    }
+
+    //Delete the employee(with id)
+    deleteEmployee(employee){
+        const sql = 'DELETE FROM employee WHERE id = ?';
+        return db.promise().query(sql, employee);
+    }
+}
+
+module.exports = Database;
