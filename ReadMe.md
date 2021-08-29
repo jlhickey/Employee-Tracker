@@ -21,13 +21,10 @@ The apps used to run
 
 ## Mock Up
 
- [screen shot](https://github.com/jlhickey/ReadMe-generator/blob/main/EmployeeTracker.png)
+ [screen shot](https://github.com/jlhickey/Employee-Tracker/blob/main/Screen%20Recording%202021-08-29%20at%202.28.37%20PM.mov
 
 
 
-There is a demo video of how well my ReadMe assignment went
-To watch it, go to:  
- https://github.com/jlhickey/ReadMe-generator/blob/main/utils/EmployeeTracker.mov
 
 
 
