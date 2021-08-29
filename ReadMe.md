@@ -21,8 +21,8 @@ The apps used to run
 
 ## Mock Up
 
- [screen shot](https://github.com/jlhickey/Employee-Tracker/blob/main/Screen%20Recording%202021-08-29%20at%202.28.37%20PM.mov
-
+ [screen shots](https://github.com/jlhickey/Employee-Tracker/blob/main/Screen%20Recording%202021-08-29%20at%202.28.37%20PM.mov)
+       https://github.com/jlhickey/Employee-Tracker/blob/main/Screen%20Recording%202021-08-29%20at%202.37.58%20PM.mov
 
 
 
