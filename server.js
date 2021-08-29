@@ -1,30 +1,13 @@
-const mysql = require('mysql2')
+onst mysql = require('mysql2')
 const inquirer = require('inquirer');
 const cTable = require('console.table');
-const { create } = require('domain');
-
-// Create the connection to MySQL WorkBench
-//Connect to the database
-let connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'employees_db'
-});
-require('dotenv').config()
-
- 
-    
-
-connection.connect(err => {
-    if (err) throw err;
-    console.log('connected as id ' + connection.threadId);
-    afterConnection();
-});
+const db = require("./db");
 
 
+promptUser();
 
-const promptUser = () => {
+
+function promptUser(){
     inquirer.prompt([
         {
             type: 'list',
@@ -43,7 +26,7 @@ const promptUser = () => {
                 'Delete a role',
                 'Delete an employee',
                 'View department budgets',
-                'Exite']
+                'Exit']
         }
     ])
         .then((answers) => {
@@ -86,15 +69,15 @@ const promptUser = () => {
             }
 
             if (choices === "Delete a department") {
-                deleteDepartment();
+                DeleteDepartment();
             }
 
             if (choices === "Delete a role") {
-                deleteRole();
+                DeleteRole();
             }
 
             if (choices === "Delete an employee") {
-                deleteEmployee();
+                DeleteEmployee();
             }
 
             if (choices === "View department budgets") {
@@ -118,21 +101,15 @@ showDepartments = () => {
         promptUser();
     });
 };
-
- 
-showRoles = () => {
-    console.log('Showing all roles\n');
-
-    const sql = `select role.id, role.title, department.name AS department
-               from role
-               inner join department ON role.department_id = department.id`;
-
-    connection.promise().query(sql, (err, rows) => {
-        if (err) throw err;
-        console.table(rows);
-        promptUser();
-    })
-};
+function showRoles() {
+    db.getRoles()
+        .then(([rows]) => {
+            let roles = rows;
+            console.log("\n");
+            console.table(roles);
+        })
+        .then(() => promptUser());
+}
 
  
 showEmployees = () => {
